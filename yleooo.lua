@@ -1,5 +1,9 @@
+-- Embedded Hydra UI Library
+local UILibrary = {}
+-- [Insert the entire Hydra Lib Source.lua content here, replacing the document placeholder]
+-- ... (paste the full library code up to "return UILibrary")
+
 -- Solar - Saber Simulator GUI using Hydra UI Library
-local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/your-repo/HydraLibSource.lua"))() -- Replace with actual library source or load method
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
