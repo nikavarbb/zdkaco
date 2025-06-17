@@ -1,7 +1,7 @@
 --// Load Luminosity UI
 local httpRequest = (syn and syn.request or http and http.request or request)
 local response = httpRequest({
-    Url = "https://raw.githubusercontent.com/icuck/GenesisStudioLibraries/main/Elerium%20Interface%20Library.lua",
+    Url = "https://raw.githubusercontent.com/nikavarbb/zdkaco/refs/heads/main/Luminosity%20Lib%20Source.lua",
     Method = "GET"
 })
 local Luminosity = loadstring(response.Body)()
