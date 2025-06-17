@@ -1,5 +1,10 @@
 --// Load Luminosity UI
-local Luminosity = loadstring(game:HttpGet("https://raw.githubusercontent.com/icuck/GenesisStudioLibraries/main/Elerium%20Interface%20Library.lua"))()
+local httpRequest = (syn and syn.request or http and http.request or request)
+local response = httpRequest({
+    Url = "https://raw.githubusercontent.com/icuck/GenesisStudioLibraries/main/Elerium%20Interface%20Library.lua",
+    Method = "GET"
+})
+local Luminosity = loadstring(response.Body)()
 
 --// Setup Window
 local Window = Luminosity.new("Pusku Hub", "Saber GUI")
